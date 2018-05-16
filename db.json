@@ -1,0 +1,20 @@
+{
+  "recipe": [
+    {
+      "name": "Ca kangkung",
+      "ingredients": [
+        "oke",
+        "mengapa"
+      ],
+      "id": "2881ea6e-1853-45a7-9fd4-3376bb14c4c7"
+    },
+    {
+      "name": "Ca jamur",
+      "ingredients": [
+        "oke",
+        "mengapa"
+      ],
+      "id": "dce8e142-414b-4853-b281-ba946e66b7c6"
+    }
+  ]
+}
