@@ -27,9 +27,9 @@ exports.save = (recipe) => (
 )
 
 exports.update = (id, obj) => (
-  db.get('reciipe')
+  db.get('recipe')
     .find({ id })
-    .assign({ obj })
+    .assign(obj)
     .write()
 )
 

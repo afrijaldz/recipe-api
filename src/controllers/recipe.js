@@ -5,7 +5,8 @@ exports.index = (req, res) => {
   const data = task.get('recipe')
 
   res.json({
-    status: 'success',
+    status: 'OK',
+    message: 'success',
     data,
   })
 }
@@ -15,7 +16,8 @@ exports.show = async (req, res) => {
   const data = await task.show(id)
 
   res.json({
-    status: 'success',
+    status: 'OK',
+    message: 'success',
     data,
   })
 }
@@ -24,10 +26,12 @@ exports.store = async (req, res) => {
   const obj = req.body
   obj.id = uuid()
 
-  const data = await task.save(obj)
+  await task.save(obj)
+
   res.json({
-    status: 'success',
-    data
+    status: 'OK',
+    message: 'success',
+    data: obj
   })
 }
 
@@ -35,19 +39,25 @@ exports.update = async (req, res) => {
   const id = req.params.id
   const obj = req.body
   
-  const data = await task.update(id, obj)
+  await task.update(id, obj)
+
+  const data = await task.show(id)
+  
   res.json({
-    status: 'success',
-    data
+    status: 'OK',
+    message: 'success',
+    data,
   })
 }
 
 exports.destroy = async (req, res) => {
   const id = req.params.id
 
-  const data = await task.remove(id)
+  await task.remove(id)
+
   res.json({
-    status: 'data successfully deleted.',
-    data,
+    status: 'OK',
+    message: 'data successfully deleted.',
+    data: null,
   })
 }
