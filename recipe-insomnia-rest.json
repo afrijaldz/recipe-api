@@ -1,0 +1,179 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-08-17T03:57:29.863Z",
+	"__export_source": "insomnia.desktop.app:v6.0.2",
+	"resources": [
+		{
+			"_id": "wrk_0d4e1c9fb674478c8110f6a0a9c2453d",
+			"created": 1534308762581,
+			"description": "",
+			"modified": 1534308762581,
+			"name": "Recipe",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_a6e464bae2724dfa864ea1c2939baa6a",
+			"color": null,
+			"created": 1534308762899,
+			"data": {
+				"url": "http://localhost:3000"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1534308762899,
+			"modified": 1534476947223,
+			"name": "New Environment",
+			"parentId": "wrk_0d4e1c9fb674478c8110f6a0a9c2453d",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_0f929f9fab04422e97816ca81a0dfc1b",
+			"cookies": [],
+			"created": 1534308762915,
+			"modified": 1534308762915,
+			"name": "Default Jar",
+			"parentId": "wrk_0d4e1c9fb674478c8110f6a0a9c2453d",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_65c4cc2a459f4d4dbf6d1f96c1e4336f",
+			"authentication": {},
+			"body": {},
+			"created": 1534308766724,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1534308766724,
+			"method": "GET",
+			"modified": 1534478102503,
+			"name": "/",
+			"parameters": [],
+			"parentId": "wrk_0d4e1c9fb674478c8110f6a0a9c2453d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url  }}/",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f50beba91a954a38bde82586b52b75af",
+			"authentication": {},
+			"body": {},
+			"created": 1534477104914,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1534307071699.5,
+			"method": "GET",
+			"modified": 1534478187840,
+			"name": "/:id",
+			"parameters": [],
+			"parentId": "wrk_0d4e1c9fb674478c8110f6a0a9c2453d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url  }}/eb8f29ea-87e4-46fa-8e10-ca704498d3cf",
+			"_type": "request"
+		},
+		{
+			"_id": "req_bf9e4afec2904daa945860657de1988b",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Ca kangkung\",\n\t\"ingredients\": [\n\t\t\"bawang\",\n\t\t\"mentah\"\n\t]\n}"
+			},
+			"created": 1534477118960,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_6832439aa24d4ad39c0bf4ba0150a089",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1534306224187.25,
+			"method": "POST",
+			"modified": 1534478187042,
+			"name": "/",
+			"parameters": [],
+			"parentId": "wrk_0d4e1c9fb674478c8110f6a0a9c2453d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url  }}/",
+			"_type": "request"
+		},
+		{
+			"_id": "req_b2f174fffa7142beb177522eef24ff88",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"ingredients\": [\n\t\t\"bombay\",\n\t\t\"jagung\"\n\t]\n}"
+			},
+			"created": 1534477307629,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_6832439aa24d4ad39c0bf4ba0150a089",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1534305800431.125,
+			"method": "PUT",
+			"modified": 1534478058565,
+			"name": "/:id",
+			"parameters": [],
+			"parentId": "wrk_0d4e1c9fb674478c8110f6a0a9c2453d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url  }}/eb8f29ea-87e4-46fa-8e10-ca704498d3cf",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6bfee1ca7e7646b3be03c5e9727f958f",
+			"authentication": {},
+			"body": {},
+			"created": 1534478071387,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_6832439aa24d4ad39c0bf4ba0150a089",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1534305588553.0625,
+			"method": "DELETE",
+			"modified": 1534478098821,
+			"name": "/:id",
+			"parameters": [],
+			"parentId": "wrk_0d4e1c9fb674478c8110f6a0a9c2453d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ url  }}/eb8f29ea-87e4-46fa-8e10-ca704498d3cf",
+			"_type": "request"
+		}
+	]
+}
