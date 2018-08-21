@@ -51,7 +51,7 @@ exports.update = async (req, res) => {
 }
 
 exports.destroy = async (req, res) => {
-  const id = req.params.id
+  const { id } = req.params
 
   await task.remove(id)
 
